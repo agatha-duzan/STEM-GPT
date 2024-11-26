@@ -6,7 +6,7 @@
 
 ## Overview
 
-STEM-GPT is an AI assistant designed to answer multiple-choice questions (MCQ) in STEM subjects. This project aims to enhance the learning experience for EPFL students by providing accurate answers and detailed explanations.
+STEM-GPT is an AI assistant designed to answer multiple-choice questions (MCQ) in STEM subjects. This project aims to enhance the learning experience for students by providing accurate answers and detailed explanations.
 
 **Key Highlights:**
 - **Base Model**: Built upon GPT-Neo 125M, a lightweight yet powerful language model.
