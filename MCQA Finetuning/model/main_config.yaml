@@ -1,0 +1,17 @@
+"team_name": "agatha-duzan" # Your team name
+"eval_method": ["mcqa"] # mcqa, reward, rag, quantiz
+"task_type": "causal_lm" # causal_lm, seq2seq
+"policy_model_path": "agatha-duzan/sft_neo" # best MCQA model
+# "policy_model_path": "agatha-duzan/dpo_gpt_neo_3" # best DPO model
+"reference_model_path": "agatha-duzan/gpt_neo_padded" # True base is EleutherAI/gpt-neo-125m, I just added a pad token for the script to work
+"test_data_path": "datasets/MCQA_eval.jsonl" # MCQA
+# "test_data_path": "datasets/DPO_eval.jsonl" # DPO
+"dpo_model_args": null # Put any model arguments required to load your DPO model below
+# not used:
+"quantized_policy_model_path": "./checkpoints/best_model_quantized/" # Your path to the final quantized checkpoint
+"rag_policy_model_path": "./checkpoints/best_model_rag/" # Your path to the final RAG checkpoint
+"rag_model_args": # Put any model arguments required to load your rag model below
+  "encoder_model_path": "facebook/bart-large"
+  "retriever_model_path": "./checkpoints/rag_retriever"
+  "document_dir": "./data/documents"
+"quantized_model_args": null # Put any model arguments required to load your quantized model below
